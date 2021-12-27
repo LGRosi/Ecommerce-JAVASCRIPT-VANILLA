@@ -1,0 +1,219 @@
+body {
+    background-color: #110f0fea;
+}
+
+header {
+    z-index: 100;
+}
+
+.logo {
+    width: 200px;
+    height: 90px;
+    background: url("../imagenes/logo.svg") center center no-repeat;
+    font-size: 0;
+    z-index: 2000;
+	cursor: pointer;
+	
+}
+
+.description{
+    height: 25px;
+}
+
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos{
+    display: flex;
+}
+  
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.hide, .remove{
+    display: none;
+}
+
+
+.bordeCarrito {
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+    color: #FFFFFF;
+}
+
+
+/* MODAL VER DETALLE */
+.modal {
+	position: fixed;
+	z-index: 10000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(34, 34, 34, 0.9);
+}
+
+.modal a {
+	position: fixed;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	top: 4em;
+	right: 1.5em;
+	border-radius: 2.5em;
+	width: 3em;
+	height: 3em;
+	background-color: rgba(255,255,255,.9);
+	font-size: 1em;
+	font-weight: 500;
+	text-align: center;
+	color:black;
+	text-decoration: none;
+}
+
+.modal a:hover {
+	background-color: #0d6efd;
+	color: rgba(255,255,255,.9);
+}
+
+.modal img {
+	height: 36%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.modal h3, .modal p, .modal li {
+	margin: 0;
+	text-align: center;
+    margin: 7px;
+    font-size: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    
+    
+}
+
+.modal li {
+	display: flex;
+	justify-content: space-around;
+	margin: .25em 0;
+	width: 90%;
+    
+}
+
+.modal li span {
+	font-size: 3em;
+}
+
+.modalTotalForm {
+	font-size: 25px !important;
+	color: white;
+}
+
+
+/*EFECTO DE IMAGENES*/
+.efectoImg:hover {
+	transform: scale(1.02);
+	transition: all .5s ease;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+
+/* BANNER */
+.displayBanner {
+	display: none;
+}
+
+.imgRadius {
+	border-radius: 10px;
+}
+
+.equis {
+	display: inline-block;
+	position: relative;
+	bottom: 50px;
+}
+
+.equisBanner {
+	border: 1px solid white;
+	border-radius: 50%;
+	padding: 5px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/*FORMULARIO*/
+.fondoForm {
+	background: #ecebeb;
+	border-radius: 10px;
+}
+
+.radiusInput {
+	border-radius: 7px;
+}
+
+.ccv {
+	width: 100px;
+}
+
+
+
+
+
+/*FILTRADO PRODUCTOS*/
+.categorias {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.aTodos, .aCuerdas, .aPercusion, .aOtros {
+	color: white;
+	text-decoration: none;
+} 
+
+.activo {
+	color: #0d6efd;
+}
+
+.estructuraInstrumentoOculta {
+	display: none;
+}

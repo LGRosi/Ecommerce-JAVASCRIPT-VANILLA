@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" href="imagenes/nota_azul.png" />
+    <title>Musindi | Lucas Rosi</title>
+  </head>
+
+  <body>
+    <header class="container-fluid bg-dark position-sticky">
+      <div class="row">
+        <nav class="col-12 d-flex justify-content-between">
+          <h1 class="logo">Instrumentos musicales</h1>
+
+          <ul class="nav nav-pills py-4" id="pills-tab" role="tablist">
+            <li class="nav-item h6" role="presentation">
+              <a
+                class="nav-link active menuProductos"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="true"
+                >PRODUCTOS</a
+              >
+            </li>
+            <li class="nav-item h6" role="presentation">
+              <a
+                class="nav-link"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >CARRITO</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="row">
+        <div class="col-12 tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >1</div>
+
+          <div
+          class="tab-pane fade show active divReferencia"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          >
+            <h2 class="h3 my-5 mb text-center text-white">NUESTRA SELECCIÓN</h2>
+            <div class="minicarrito bordeCarrito w-25 mb-5">
+              <p class="text-center text-white pb-1 h5">
+                <span class="resumenItemAgregado">0</span> ítem agregado
+              </p>
+              <p class="text-center text-white h5">SubTotal: <span class="resumenSubTotal">$ 0</span></p>
+            </div>
+
+
+
+            <!-- FILTRADO -->
+            <div class="col-12 mb-5">
+              <h3 class="text-white text-center my-4">
+                Categoría de productos
+              </h3>
+              <div class="categorias" id="categorias">
+                <a href="#" class="activo aTodos">Todos</a>
+                <a href="#" class="aCuerdas">Cuerdas</a>
+                <a href="#" class="aPercusion">Percusion</a>
+                <a href="#" class="aOtros">Otros</a>
+              </div>
+              
+            </div>
+            <!-- FILTRADO -->
+
+
+            <!-- BANNER -->
+            <div class="container mb-5 d-flex justify-content-center">
+              <div class="row">
+                <div class="col-12 divBanner">
+                  <img src="imagenes/Banner.png" class="img-fluid imgRadius" alt="Banner publicitario" />
+                  <div class="equis pointer m-2">
+                    <p class="text-white equisBanner">X</p>
+                    <p class="tiempo"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- BANNER -->
+
+
+
+            <!-- LISTADO DE PRODUCTOS -->
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 losProductos"></div>
+            <!-- LISTADO DE PRODUCTOS -->
+
+          </div>
+
+
+
+          <!--ESTRUCTURA CARRITO-->
+          <div
+            class="tab-pane fade carrito"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            <table class="table table-dark table-hover mt-5">
+              <thead>
+                <tr class="text-primary">
+                  <th scope="col">#</th>
+                  <th scope="col">Productos</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                </tr>
+              </thead>
+              <tbody class="tbody"></tbody>
+            </table>
+            <div class="row mx-4">
+              <div class="col">
+                <h3 class="itemCarritoTotal text-white">Total: 0</h3>
+              </div>
+              <div class="col d-flex justify-content-end">
+                <button class="btn btn-success btnComprar px-5 mx-3">COMPRAR</button>
+                <button class="btn btn-outline-danger btnVaciar">VACIAR CARRITO</button>
+              </div>
+            </div>
+          </div>
+          <!--ESTRUCTURA CARRITO-->
+
+        </div>
+      </section>
+    </main>
+
+
+
+
+    <!--ESTRUCTURA FORMULARIO-->
+    <section class="container formularioCompleto pt-5 my-5"></section>
+    <!--ESTRUCTURA FORMULARIO-->
+
+
+
+
+
+
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">
+        © copyright 2021 Todos los Derechos Reservados | Musindi
+      </p>
+    </footer>
+
+    <script src="bootstrap5/js/bootstrap.min.js"></script>
+    <script src="js/carrito.js"></script>
+  </body>
+</html>
